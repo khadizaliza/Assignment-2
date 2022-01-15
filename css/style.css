@@ -348,6 +348,40 @@ footer{
     font-size: 20px;
    
 }
+/* Media Queries */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+        
+    }
+    .collection{
+        grid-template-columns: repeat(2 fr);
+    }
+    .navigation li{
+        display: none;
+    }
+    .home{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .home-right{
+        position: relative;
+        flex-direction: column;
+    }
+    .home-left{
+        
+        flex-direction: column;
+    }
+    .logo{
+        display: none;
+    }
+    .footer ul{
+        
+        padding-left: 180px;
+    }
+}
+
+
 
 
 
