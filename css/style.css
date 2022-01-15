@@ -1,0 +1,354 @@
+
+/* Font family */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2, h3, h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 30px;
+}
+/* heading-css */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation{
+    display: flex;
+}
+.navigation li{
+    list-style: none;
+    margin: 10px;
+    padding: 20px;
+    color: blue;
+}
+.navigation li a{
+    text-decoration: none;
+}
+.title{
+    padding: 10px;
+    color: blue;
+} 
+/* Home start */
+.home{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.home-left{
+   padding: 30px;
+   
+    
+}
+.home-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ghostwhite;
+}
+
+
+.home-left h1{
+    color: blue;
+    font-size: 40px;
+    font-weight: 700;
+}
+.home-left p{
+    color: blue;
+    font-size: small;
+    margin: 20px;
+    line-height: 25px;
+    
+}
+.primary-button{
+    background-color: rgb(55, 55, 245);
+    padding: 10px 25px;
+    color: #fff;
+    border: 1px solid rgb(55, 55, 245);
+    border-radius: 10px;
+}
+.primary-button i{
+    padding-left: 10px;
+}
+.home-title{
+   color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    white-space: nowrap; 
+    position: relative;
+}
+.home-title::before{
+    content: "Electronic World";
+    position: absolute;
+    color: rgb(111, 111, 250);
+    top: 0;
+    left: 0;
+    animation: typing 3s linear infinite;
+}
+@keyframes typing{
+    0%{
+        content: 'E|';
+    }
+    4%{
+        content: 'El|';
+    }
+    8%{
+        content: 'Ele|';
+    }
+    12%{
+        content: 'Elec|';
+    }
+    16%{
+        content: 'Elect|';
+    }
+    20%{
+        content: 'Electr|';
+    }
+    24%{
+        content: 'Electro|';
+    }
+    28%{
+        content: 'Electron|';
+    }
+    32%{
+        content: 'Electroni|';
+    }
+    36%{
+        content: 'Electronic|';
+    }
+    40%{
+        content: 'Electronic |';
+    }
+    44%{
+        content: 'Electronic W|';
+    }
+    48%{
+        content: 'Electronic Wo|';
+    }
+    52%{
+        content: 'Electronic Wor|';
+    }
+    56%{
+        content: 'Electronic Worl|';
+    }
+    60%{
+        content: 'Electronic World|';
+    }
+    64%, 83%{
+        content: 'Electronic World|';
+    }
+    84%{
+        content: 'Electronic Worl|';
+    }
+    85%{
+        content: 'Electronic Wor|';
+    }
+    86%{
+        content: 'Electronic Wo|';
+    }
+    87%{
+        content: 'Electronic W|';
+    }
+    88%{
+        content: 'Electronic |';
+    }
+    89%{
+        content: 'Electronic|';
+    }
+    90%{
+        content: 'Electroni|';
+    }
+    91%{
+        content: 'Electron|';
+    }
+    92%{
+        content: 'Electro|';
+    }
+    93%{
+        content: 'Electr|';
+    }
+    94%{
+        content: 'Elect|';
+    }
+    95%{
+        content: 'Elec|';
+    }
+    96%{
+        content: 'Ele|';
+    }
+    97%{
+        content: 'El|';
+    }
+    98%{
+        content: 'E|';
+    }
+    99%{
+        content: '|';
+    }
+    100%{
+        content: '|';
+    }
+}
+.camera{
+    animation: sliding 5s ease-in-out 0.5s infinite alternate;
+    position: absolute;
+    transition: 1s;
+}
+@keyframes sliding {
+    from{
+       bottom: 0;
+    }
+    to{
+        
+        bottom: 30px;
+    }
+}
+.logo{
+    
+    border-top: 2px solid rgb(243, 236, 236);
+    border-bottom: 2px solid rgb(243, 236, 236);
+}
+.logo ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo li{
+    
+    list-style: none;
+    padding: 20px;
+}
+/* Collection css */
+.popular{
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+}
+.rating{
+    display: flex;
+    font-size: 15px;
+}
+.rating ul{
+    display: flex;
+    
+}
+.rating li{
+    
+    list-style: none;
+}
+.rating i{
+    color: gold;
+}
+.rating span{
+    padding-left: 10px;
+}
+.blog h3{
+    font-size: 20px;
+    color: blue;
+}
+.blog span{
+    font-size: 15px;
+    color: blue;
+}
+.blog {
+    font-size: small;
+    color: blue;
+}
+.photo img{
+    width: 100%;
+}
+.collection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+ 
+}
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -2px 9px 38px 1px rgba(0,0,0,0.57);
+    -webkit-box-shadow: -2px 9px 38px 1px rgba(0,0,0,0.57);
+    -moz-box-shadow: -2px 9px 38px 1px rgba(0,0,0,0.57);;
+}
+.see-more{
+    font-size: 20px;
+    color: blue;
+    float: right;
+    padding-right: 20px;
+}
+/* Feature css */
+.digital-world{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.digital-img{
+    padding: 20px;
+}
+.digital-img img{
+    width: 100%;
+}
+.feature{
+    padding: 20px;
+    margin: 20px;
+}
+.feature h1{
+    padding: 20px;
+    color: blue;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.feature p{
+    
+    font-size: small;
+    line-height: 25px;
+    
+}
+.feature button{
+    margin-top: 20px;
+}
+/* Footer */
+footer{
+    background-color: #0A0826;
+}
+.footer{
+    color: #fff;
+    text-align: center;
+}
+.footer h1{
+    font-size: 30px;
+}
+.footer p{
+    font-size: small;
+}
+.footer ul{
+    display: flex;
+    padding-left: 450px;
+}
+.footer li{
+    list-style: none;
+    padding: 20px;
+    
+}
+.footer-icon i{
+   
+    font-size: 20px;
+   
+}
+
+
+
+
